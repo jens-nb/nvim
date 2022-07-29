@@ -1,4 +1,5 @@
 require "user.settings"
 require "user.keymaps"
-require "user.plugin"
 require "user.colorscheme"
+require "user.plugins"
+require "user.mason"

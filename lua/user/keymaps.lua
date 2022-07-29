@@ -12,3 +12,13 @@ vim.g.maplocalleader = " "
 keymap("n", "<leader>w", ":w<CR>", opts)
 keymap("n", "<leader>q", ":q<CR>", opts)
 keymap("n", "<leader>s", ":so %<CR>", opts)
+
+-- Better window navigation
+keymap("n", "<C-h>", "<C-w>h", opts)
+keymap("n", "<C-j>", "<C-w>j", opts)
+keymap("n", "<C-k>", "<C-w>k", opts)
+keymap("n", "<C-l>", "<C-w>l", opts)
+
+-- Split windows vertically and horizontally
+keymap("n", "<leader>wsv", ":vsplit<CR>", opts)
+keymap("n", "<leader>wsh", ":split<CR>", opts)
