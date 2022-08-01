@@ -48,6 +48,7 @@ return packer.startup(function(use)
 	use { "kyazdani42/nvim-web-devicons", commit = "2d02a56189e2bde11edd4712fea16f08a6656944" }
 	use { "nvim-lualine/lualine.nvim", commit = "6d11f9f50817020cf634903a235628cabe0c56f8" }
 	use { "nvim-telescope/telescope.nvim", commit = "75a5e5065376d9103fc4bafc3ae6327304cee6e9" }
+	use { "folke/which-key.nvim", commit = "bd4411a2ed4dd8bb69c125e339d837028a6eea71" }
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }

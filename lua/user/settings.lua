@@ -13,3 +13,6 @@ vim.opt.termguicolors = true
 -- Text options
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
+
+-- Misc
+vim.opt.timeoutlen = 500
