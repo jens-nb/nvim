@@ -49,7 +49,7 @@ return packer.startup(function(use)
 	use { "nvim-lualine/lualine.nvim", commit = "6d11f9f50817020cf634903a235628cabe0c56f8" }
 	use { "nvim-telescope/telescope.nvim", commit = "75a5e5065376d9103fc4bafc3ae6327304cee6e9" }
 	use { "folke/which-key.nvim", commit = "bd4411a2ed4dd8bb69c125e339d837028a6eea71" }
-
+	use { "kyazdani42/nvim-tree.lua", commit = "451901ca9c4a0d97d7b7cb93276be7ed5588b3ab"}
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }
   use { "lunarvim/darkplus.nvim", commit = "2584cdeefc078351a79073322eb7f14d7fbb1835" }
