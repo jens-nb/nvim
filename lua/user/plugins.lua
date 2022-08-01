@@ -46,12 +46,17 @@ return packer.startup(function(use)
   use { "williamboman/mason.nvim", commit = "2680ff415265665de7c88b766818e34870f522c3" }
 	use	{	"https://github.com/akinsho/bufferline.nvim", commit = "c4dd9b4de03b891f648b098c25e4dc1bc48a13e5"}
 	use { "kyazdani42/nvim-web-devicons", commit = "2d02a56189e2bde11edd4712fea16f08a6656944" }
+	use { "nvim-lualine/lualine.nvim", commit = "6d11f9f50817020cf634903a235628cabe0c56f8" }
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }
   use { "lunarvim/darkplus.nvim", commit = "2584cdeefc078351a79073322eb7f14d7fbb1835" }
 	use { "lunarvim/onedarker.nvim", commit  = "4eaa5e8760832d23a84f8ad4e0ff012eacd2c01f" }
 	use { "ellisonleao/gruvbox.nvim", commit = "29c50f1327d9d84436e484aac362d2fa6bca590b" }
+
+	-- Cisco syntax highlighting
+	use { "momota/cisco.vim", commit = "4b268e4a893768e561e20e5022a6fb69214335a1" }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
