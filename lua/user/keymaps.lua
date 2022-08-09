@@ -13,6 +13,7 @@ vim.g.maplocalleader = " "
 keymap("n", "<leader>w", ":w<CR>", opts)
 keymap("n", "<leader>q", ":q<CR>", opts)
 keymap("n", "<leader>s", ":so %<CR>", opts)
+keymap("n", "<leader>h", ":noh <CR>", opts)
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -21,8 +22,8 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Buffer navigation
-keymap("n", "<S-l>", ":bnext<CR>", opts) 
-keymap("n", "<S-h>", ":bprevious<CR>", opts) 
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<S-q>", ":bd<CR>", opts)
 
 -- Split windows vertically and horizontally

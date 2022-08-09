@@ -13,6 +13,9 @@ vim.opt.termguicolors = true
 -- Text options
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
+vim.opt.smarttab = true
 
 -- Misc
 vim.opt.timeoutlen = 500
+vim.opt.mouse = "a"
+vim.opt.updatetime = 300

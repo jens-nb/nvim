@@ -43,7 +43,6 @@ return packer.startup(function(use)
   -- My plugins here
   use { "wbthomason/packer.nvim", commit = "00ec5adef58c5ff9a07f11f45903b9dbbaa1b422" } -- Have packer manage itself
   use { "nvim-lua/plenary.nvim", commit = "968a4b9afec0c633bc369662e78f8c5db0eba249" } -- Useful lua functions used by lots of plugins
-  use { "williamboman/mason.nvim", commit = "2680ff415265665de7c88b766818e34870f522c3" }
 	use	{	"https://github.com/akinsho/bufferline.nvim", commit = "c4dd9b4de03b891f648b098c25e4dc1bc48a13e5"}
 	use { "kyazdani42/nvim-web-devicons", commit = "2d02a56189e2bde11edd4712fea16f08a6656944" }
 	use { "nvim-lualine/lualine.nvim", commit = "6d11f9f50817020cf634903a235628cabe0c56f8" }
@@ -59,6 +58,11 @@ return packer.startup(function(use)
 
 	-- Cisco syntax highlighting
 	use { "momota/cisco.vim", commit = "4b268e4a893768e561e20e5022a6fb69214335a1" }
+
+	-- LSP plugins
+  use { "williamboman/mason.nvim", commit = "2680ff415265665de7c88b766818e34870f522c3" }
+	use { "neovim/nvim-lspconfig", commit = "446e51c3cc016640dce7b7bc7ed098c674e9ee3d"}
+	use { "williamboman/mason-lspconfig.nvim", commit = "f87c5796603aa3436d9cb1d36dbe5b2e579e4034"}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

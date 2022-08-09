@@ -1,4 +1,5 @@
 require "user.settings"
+require "user.lsp"
 require "user.keymaps"
 require "user.colorscheme"
 require "user.plugins"
