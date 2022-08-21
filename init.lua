@@ -10,4 +10,4 @@ require "user.telescope"
 require "user.whichkey"
 require "user.nvim-tree"
 require "user.treesitter"
-
+require "user.cmp"
