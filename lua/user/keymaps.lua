@@ -6,7 +6,7 @@ local keymap = vim.keymap.set
 -- Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
-vim.g.maplocalleader = " " 
+vim.g.maplocalleader = " "
 
 -- Normal Mode --
 -- Basics
@@ -37,3 +37,6 @@ keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 
 -- Nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+
+-- Trouble
+keymap("n", "<leader>lt", ":TroubleToggle<CR>", opts)

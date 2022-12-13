@@ -64,7 +64,7 @@ return packer.startup(function(use)
 	use { "williamboman/mason.nvim", commit = "2680ff415265665de7c88b766818e34870f522c3" }
 	use { "neovim/nvim-lspconfig", commit = "446e51c3cc016640dce7b7bc7ed098c674e9ee3d" }
 	use { "williamboman/mason-lspconfig.nvim", commit = "f87c5796603aa3436d9cb1d36dbe5b2e579e4034" }
-
+	use { "folke/trouble.nvim", commit = "c4da921ba613aa6d6659dc18edc204c37e4b8833"}
 	-- CMP & snippets
 	-- TODO: update commit pins
 	use { "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" } -- The completion plugin
