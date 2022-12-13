@@ -9,10 +9,12 @@ vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"
 vim.opt.numberwidth = 2
 vim.opt.termguicolors = true
+vim.opt.conceallevel = 2
+vim.opt.completeopt = { "menuone", "noselect" } -- mostly just for cmp
 
 -- Text options
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.smarttab = true
 
 -- Misc
