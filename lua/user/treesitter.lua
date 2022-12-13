@@ -3,7 +3,7 @@ local status_ok, ts_configs = pcall(require, "nvim-treesitter.configs")
 	return
 end
 
-my_languages = { 
+local my_languages = {
 	"bash",
 	"dockerfile",
 	"go",
