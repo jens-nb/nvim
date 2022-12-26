@@ -40,6 +40,7 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
+
 	-- My plugins here
 	use { "wbthomason/packer.nvim", commit = "dac4088c70f4337c6c40d1a2751266a324765797" } -- Have packer manage itself
 	use { "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" } -- Useful lua functions used by lots of plugins
@@ -51,7 +52,7 @@ return packer.startup(function(use)
 	use { "folke/which-key.nvim", commit = "8682d3003595017cd8ffb4c860a07576647cc6f8" }
 	use { "nvim-treesitter/nvim-treesitter", commit = "a2d7e78b0714a0dc066416100b7398d3f0941c23" }
 	use { "windwp/nvim-autopairs", commit = "03580d758231956d33c8dd91e2be195106a79fa4"}
-	
+
 	-- Colorschemes
 	use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }
 	use { "lunarvim/darkplus.nvim", commit = "2584cdeefc078351a79073322eb7f14d7fbb1835" }
@@ -66,9 +67,8 @@ return packer.startup(function(use)
 	use { "neovim/nvim-lspconfig", commit = "a63d2c75c6880d45209baff596939343e8a431fd" }
 	use { "williamboman/mason-lspconfig.nvim", commit = "31d8ed0dd3daf6cc64e35d710a190b64080bdc86" }
 	use { "folke/trouble.nvim", commit = "c4da921ba613aa6d6659dc18edc204c37e4b8833"}
-	
+
 	-- CMP & snippets
-	-- TODO: update commit pins
 	use { "hrsh7th/nvim-cmp", commit = "d09b0c396aaa078cdfe78316ec06940971136e85" } -- The completion plugin
 	use { "hrsh7th/cmp-buffer", commit = "3022dbc9166796b644a841a02de8dd1cc1d311fa" } -- buffer completions
 	use { "hrsh7th/cmp-path", commit = "91ff86cd9c29299a64f968ebb45846c485725f23" } -- path completions
@@ -77,6 +77,7 @@ return packer.startup(function(use)
 	use { "L3MON4D3/LuaSnip", commit = "5570fd797eae0790affb54ea669a150cad76db5d" } --snippet engine
 	use { "saadparwaiz1/cmp_luasnip", commit = "18095520391186d634a0045dacaa346291096566" } -- snippet completions
 	use { "rafamadriz/friendly-snippets", commit = "1a6a02350568d6830bcfa167c72f9b6e75e454ae" } -- a bunch of snippets to use
+	use { "folke/todo-comments.nvim", commit = "98354ddf869d1999f37f34fcc6297d2c69d6032d" }
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
