@@ -15,7 +15,8 @@ local my_languages = {
 	"markdown",
 	"python",
 	"toml",
-	"yaml"
+	"yaml",
+	"vim"
 }
 
 ts_configs.setup {
