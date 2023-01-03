@@ -51,7 +51,8 @@ return packer.startup(function(use)
 	use { "nvim-telescope/telescope.nvim", commit = "e960efa60e97df58e089b00270f09d60f27202c8" }
 	use { "folke/which-key.nvim", commit = "8682d3003595017cd8ffb4c860a07576647cc6f8" }
 	use { "nvim-treesitter/nvim-treesitter", commit = "a2d7e78b0714a0dc066416100b7398d3f0941c23" }
-	use { "windwp/nvim-autopairs", commit = "03580d758231956d33c8dd91e2be195106a79fa4"}
+	use { "windwp/nvim-autopairs", commit = "03580d758231956d33c8dd91e2be195106a79fa4" }
+	use { "RRethy/vim-illuminate", commit = "a6d0b28ea7d6b9d139374be1f94a16bd120fcda3" }
 
 	-- Colorschemes
 	use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }
@@ -66,7 +67,8 @@ return packer.startup(function(use)
 	use { "williamboman/mason.nvim", commit = "6ee823248f5fc433018ee800c22eef642e375bd1" }
 	use { "neovim/nvim-lspconfig", commit = "a63d2c75c6880d45209baff596939343e8a431fd" }
 	use { "williamboman/mason-lspconfig.nvim", commit = "31d8ed0dd3daf6cc64e35d710a190b64080bdc86" }
-	use { "folke/trouble.nvim", commit = "c4da921ba613aa6d6659dc18edc204c37e4b8833"}
+	use { "folke/trouble.nvim", commit = "c4da921ba613aa6d6659dc18edc204c37e4b8833" }
+	use { "fatih/vim-go", commit = "80e5b5861a76412c6c75e01de4d578323cf71389" }
 
 	-- CMP & snippets
 	use { "hrsh7th/nvim-cmp", commit = "d09b0c396aaa078cdfe78316ec06940971136e85" } -- The completion plugin
