@@ -4,13 +4,14 @@
 vim.opt.fileencoding = "utf-8"
 
 -- Editor UI options
-vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"
 vim.opt.numberwidth = 2
 vim.opt.termguicolors = true
 vim.opt.conceallevel = 2
-vim.opt.completeopt = { "menuone", "noselect" } -- mostly just for cmp
+vim.opt.completeopt = { "menu",  "menuone", "noselect" } -- mostly just for cmp
+
 
 -- Text options
 vim.opt.tabstop = 4
