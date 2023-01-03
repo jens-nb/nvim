@@ -3,6 +3,7 @@
 local opts = { noremap = true, silent = true }
 local keymap = vim.keymap.set
 
+
 -- Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
@@ -27,8 +28,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<S-q>", ":bd<CR>", opts)
 
 -- Split windows vertically and horizontally
-keymap("n", "<leader>wsv", ":vsplit<CR>", opts)
-keymap("n", "<leader>wsh", ":split<CR>", opts)
+keymap("n", "<leader>sv", ":vsplit<CR>", opts)
+keymap("n", "<leader>sh", ":split<CR>", opts)
 
 -- Telescope
 keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
@@ -39,4 +40,4 @@ keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Trouble
-keymap("n", "<leader>lt", ":TroubleToggle<CR>", opts)
+keymap("n", "<leader>t", ":TroubleToggle<CR>", opts)
