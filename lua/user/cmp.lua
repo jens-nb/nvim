@@ -9,17 +9,23 @@ if not snip_status_ok then
 end
 
 
-require("luasnip/loaders/from_vscode").lazy_load()
+local cmp_autopairs_status_ok, cmp_autopairs = pcall(require, "nvim-autopairs.completion.cmp")
+if not cmp_autopairs_status_ok then
+	return
+end
+
+require("luasnip.loaders.from_vscode").lazy_load()
 
 local check_backspace = function()
 	local col = vim.fn.col(".") - 1
 	return col == 0 or vim.fn.getline("."):sub(col, col):match("%s")
 end
 
+
 local kind_icons = {
 	Text = "",
 	Method = "",
-	Function = "",
+	Function = "",
 	Constructor = "",
 	Field = "",
 	Variable = "",
@@ -98,11 +104,11 @@ cmp.setup({
 		format = function(entry, vim_item)
 			vim_item.kind = kind_icons[vim_item.kind]
 			vim_item.menu = ({
-				nvim_lsp = "",
-				nvim_lua = "",
-				luasnip = "",
-				buffer = "",
-				path = "",
+				nvim_lsp = "[LSP]",
+				nvim_lua = "[API]",
+				luasnip = "[Snip]",
+				buffer = "[Buf]",
+				path = "[Path]",
 				emoji = "",
 			})[entry.source.name]
 			return vim_item
@@ -126,4 +132,9 @@ cmp.setup({
 	experimental = {
 		ghost_text = true,
 	},
+
+	cmp.event:on(
+  'confirm_done',
+  cmp_autopairs.on_confirm_done()
+)
 })
