@@ -79,6 +79,18 @@ lspconfig.gopls.setup{
 		capabilities = capabilities
 }
 
+lspconfig.ansiblels.setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+		capabilities = capabilities
+}
+
+lspconfig.yamlls.setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+		capabilities = capabilities
+}
+
 lspconfig.sumneko_lua.setup{
     on_attach = on_attach,
     flags = lsp_flags,
