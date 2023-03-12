@@ -44,3 +44,4 @@ keymap("n", "<leader>t", ":TroubleToggle<CR>", opts)
 
 -- Bufferline
 keymap("n", "<leader>bp", ":BufferLinePick<CR>", opts)
+keymap("n", "<leader>bc", ":BufferLinePickClose<CR>", opts)
