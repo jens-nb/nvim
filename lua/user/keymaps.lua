@@ -41,3 +41,6 @@ keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Trouble
 keymap("n", "<leader>t", ":TroubleToggle<CR>", opts)
+
+-- Bufferline
+keymap("n", "<leader>bp", ":BufferLinePick<CR>", opts)
