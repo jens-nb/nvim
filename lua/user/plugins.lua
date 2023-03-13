@@ -45,6 +45,7 @@ return packer.startup(function(use)
 	use { "wbthomason/packer.nvim", commit = "dac4088c70f4337c6c40d1a2751266a324765797" } -- Have packer manage itself
 	use { "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" } -- Useful lua functions used by lots of plugins
 	use { "akinsho/bufferline.nvim", commit = "4ecfa81e470a589e74adcde3d5bb1727dd407363" }
+	use { "akinsho/toggleterm.nvim", commit = "4188d58bad13ff3234bef8bafb2555f8454c289d" }
 	use { "nvim-tree/nvim-web-devicons", commit = "05e1072f63f6c194ac6e867b567e6b437d3d4622" }
 	use { "nvim-tree/nvim-tree.lua", commit = "9e4c39572f631bb60ee15cb9d46e1daa9927a45e" }
 	use { "nvim-lualine/lualine.nvim", commit = "fffbcb829288c3ca366f17cdb8d46aefb5c1d6f3" }

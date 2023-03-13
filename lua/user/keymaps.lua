@@ -35,9 +35,14 @@ keymap("n", "<leader>sh", ":split<CR>", opts)
 keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>ft", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
+keymap("n", "<leader>fm", ":Telescope marks<CR>", opts)
 
 -- Nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Trouble
 keymap("n", "<leader>t", ":TroubleToggle<CR>", opts)
+
+-- Bufferline
+keymap("n", "<leader>bg", ":BufferLinePick<CR>", opts)
+keymap("n", "<leader>bc", ":BufferLinePickClose<CR>", opts)
