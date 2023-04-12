@@ -36,6 +36,7 @@ keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>ft", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 keymap("n", "<leader>fm", ":Telescope marks<CR>", opts)
+keymap("n", "<leader>fj", ":Telescope jumplist<CR>", opts)
 
 -- Nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
