@@ -54,6 +54,7 @@ return packer.startup(function(use)
 	use { "nvim-treesitter/nvim-treesitter", commit = "a2d7e78b0714a0dc066416100b7398d3f0941c23" }
 	use { "windwp/nvim-autopairs", commit = "03580d758231956d33c8dd91e2be195106a79fa4" }
 	use { "RRethy/vim-illuminate", commit = "a6d0b28ea7d6b9d139374be1f94a16bd120fcda3" }
+	use { "OXY2DEV/markview.nvim", commit = "ea4eab9"}
 
 	-- Colorschemes
 	use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }

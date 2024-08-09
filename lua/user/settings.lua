@@ -9,7 +9,7 @@ vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"
 vim.opt.numberwidth = 2
 vim.opt.termguicolors = true
-vim.opt.conceallevel = 2
+--vim.opt.conceallevel = 2
 vim.opt.completeopt = { "menu",  "menuone", "noselect" } -- mostly just for cmp
 
 
